@@ -112,8 +112,10 @@ So I hope this has made things clearer. If not, please feel free to WhatsApp, em
 
 PS:
 Having spaces in folder and file names is equally as disgusting to me. But it won't objectively break things as much as having an absolute path in your code. So I don't take points off of it even though it makes me cringe.
+
 PPS:
 Below is a list of reading/watching resources about the difference if anything I said was unclear. 
+
 PPPS:
 Below THAT is some exercises that ChatGPT and I came up with to play around with navigating to/through/from files in directory structures. I promise this is not a useless skill.
 
