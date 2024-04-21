@@ -1,6 +1,9 @@
-TL; DR: If your file's path starts with '/' or a drive letter like 'C:/', then it's absolute and you'll lose points for it. If it starts with '.' or '..', you're probably fine.
+**TL; DR: If your file's path starts with '/' or a drive letter like 'C:/', then it's absolute and you'll lose points for it. If it starts with `.` or `..`, you're probably fine.**
 
 If that makes total sense to you, you're done. If none of that makes any sense, read on.
+
+# This is absolutely relative
+
 
 Some of you keep losing points for using absolute paths vs relative paths in your problem set code. Using absolute paths is not a problem when you're running code on your own local machine. However, it will 100%, inescapably, always, be a problem when running that same code in almost any other circumstance. Let me illustrate.
 
@@ -15,28 +18,29 @@ C://Windows/Apps/Jupyter/Whatever/myAwesomeProject/players.csv
 What's the ONLY important part of those? Right! `players.csv`.
 
 Now imagine you've written something awesome. And you have posted loads of stuff inside a repository. Something like this:
-
-CoolStoryBro/
-	raw_data/
-		games.csv
-		tournaments.csv
-	clean_data/
-		players.csv
-		rankings.csv
-		awards.csv
-	scripts/
-		cleaning_tournaments.ipynb
-		scraping_scores.py
-		modelling.ipynb
-		dashboard.ipynb
-	figures/
-		playtime.png
-		distribution.jpg
-		logo.bmp
-		layout.tif
-	archive/
-		whatever.garbage
-	.git/
+```
+  CoolStoryBro/
+    raw_data/
+      games.csv
+      tournaments.csv
+    clean_data/
+      players.csv
+      rankings.csv
+      awards.csv
+    scripts/
+      cleaning_tournaments.ipynb
+      scraping_scores.py
+      modelling.ipynb
+      dashboard.ipynb
+    figures/
+      playtime.png
+      distribution.jpg
+      logo.bmp
+      layout.tif
+    archive/
+      whatever.garbage
+    .git/
+```
 
 
 So let's say inside ALL those /scripts/ you used absolute paths. Then let's say that:
