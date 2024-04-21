@@ -62,7 +62,10 @@ So let's say inside ALL those /scripts/ you used absolute paths. Then let's say 
 In ALL, not some, not most, but _ALL_ of those scenarios, NONE of your scripts will run now. They will ALL be broken and need maintenance.
 
 So if you have a line of code in your script like:
-  `plt.scatter(x, y, marker='+').savefig('/Users/gracieLou/code/CoolStoryBro/figures/playtime.png')`
+```
+plt.scatter(x, y, marker='+').savefig('/Users/gracieLou/code/CoolStoryBro/figures/playtime.png')
+```
+
 This will now either trow an error, or worse, just simply write to the old folder that you're not using anymore that just happens to still be there. You'd run that line of code thinking the file would be in the 'new' location, but it would still be writing it to the old one! It wouldn't even tell you! So rude, right?!
 
 The reason is that it's an absolute path. It starts at the absolute root directory and navigates from the very beginning to the very end in absolute, non-negotiable terms.
@@ -76,11 +79,12 @@ So this is code that's running inside the `scripts` folder, so the `..` goes UP 
 
 If you need to use absolute paths during development/playing/experiments, GO FOR IT! But anything that I grade will get points taken off for having absolute paths in it. It's bad practice in every respect and has no 'upside' to it.
 
-The way I write my paths is using the pandas shortcuts (`<grumpy-old-man-voice>`They didn't have those when I was your age, see!`</grumpy-old-man-voice>`).  It's quite simple. Just start typing something like:
+The way I write my paths is using the pandas shortcuts (`<grumpy-old-man-voice>`"They didn't even have those when I was your age, see!"`</grumpy-old-man-voice>`).  It's quite simple. Just start typing something like:
 ```
-pd.read_csv()
+pd.read_csv('./')
 ```
-Then with your cursor inside the ()'s, just hit the <TAB> key and it will open up a drop down that you can navigate. If you don't see your file, but you see the file your folder is in, do not dismay! Just select, for example, the /raw_data/ folder from the drop-down and press <ENTER>.
+Then with your cursor inside the `('')`'s, right after the `./` just hit the `<TAB>` key and it will open up a drop down that you can navigate. If you don't see your file, but you see the folder your file is in, do not dismay! Just select, for example, the `raw_data` folder from the drop-down and press `<ENTER>` and then `<TAB>` again.
+
 
 But Brian! I used:
 	A: pwd
@@ -105,6 +109,22 @@ Having spaces in folder and file names is equally as disgusting to me. But it wo
 PPS:
 Below is a list of reading/watching resources about the difference if anything I said was unclear. 
 PPPS:
-Below that is some exercises that ChatGPT and I came up with to play around with navigating to/through/from files in directory structures. I promise this is not a useless skill.
+Below THAT is some exercises that ChatGPT and I came up with to play around with navigating to/through/from files in directory structures. I promise this is not a useless skill.
 
 
+
+LINKS:
+------------------
+https://www.linkedin.com/pulse/difference-between-absolute-path-relative-linux-waqas-muazam/
+https://www.redhat.com/sysadmin/linux-path-absolute-relative
+https://stackoverflow.com/questions/21306512/difference-between-relative-path-and-absolute-path-in-javascript
+https://teamtreehouse.com/community/difference-between-absolute-path-and-root-relative-dont-they-both-start-from-the-root
+https://medium.com/@tamerberatcelik/relative-paths-vs-absolute-paths-understanding-the-basics-of-file-navigation-5332de0550b6
+https://www.youtube.com/watch?v=ephId3mYu9o&ab_channel=Udacity
+
+
+EXERCISES
+------------------
+https://chat.openai.com/share/e78cf29c-5499-4fea-8f12-848c4314a5d3
+This has a lot of commands that have already been run in this repo.
+If you fork and/or clone it, you should be able to play around with the files/folders.
