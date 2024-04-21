@@ -133,8 +133,12 @@ EXERCISES
 ------------------
 https://chat.openai.com/share/e78cf29c-5499-4fea-8f12-848c4314a5d3
 
-![image](https://github.com/bhollan/folder_practice/assets/8443608/b285fbfa-ca7d-434f-ae2b-713548bec9de)
-
 
 This has a lot of commands that have already been run in this repo.
 If you fork and/or clone it, you should be able to play around with the files/folders.
+The image below is of how the folder structure results from the commands specified at the URL above (and was made in the command line with the `tree` package).
+Just clone this repo if you want to play with them. You can do no harm.
+
+
+
+![image](https://github.com/bhollan/folder_practice/assets/8443608/b285fbfa-ca7d-434f-ae2b-713548bec9de)
