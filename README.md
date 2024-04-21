@@ -50,21 +50,17 @@ Now imagine you've written something awesome. And you have posted loads of stuff
 ```
 
 
-So let's say inside ALL those /scripts/ you used absolute paths. Then let's say that:
+So let's say inside ALL those /scripts/ you used absolute paths. Then let's say that either:
 
+```
 A: you run your code on a server
-
 B: a friend/co-worker/whoever wants to run your code on their machine
-
 C: a TA wants to run your code to check your work ;)
-
 D: an employer wants to run your project to witness how awesome you are
-
 E: you find your own code after 2 years and you have a different computer now
-
 F: you want to show a friend your cool project, but you don't have your computer
-
 G: you copy the whole folder's project into your /projects/ folder from where it used to be
+```
 
 In ALL, not some, not most, but _ALL_ of those scenarios, NONE of your scripts will run now. They will ALL be broken and need maintenance.
 
