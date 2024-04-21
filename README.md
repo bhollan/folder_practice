@@ -87,9 +87,12 @@ Then with your cursor inside the `('')`'s, right after the `./` just hit the `<T
 
 
 But Brian! I used:
-	A: pwd
-	B: os.chdir
-	C: root = pwd();  os.chdir(root)
+
+A: pwd
+
+B: os.chdir
+
+C: root = pwd();  os.chdir(root)
 
 Well, os.chdir will just change the current directory to whatever you give it (which is WAY WORSE). So if you give it an aboslute path, it doesn't fix the problem, it actually makes many, many more. And C is the same thing as doing sqrt(x**2) or "the squaure root of x squared" which is just x. The handiest shortcut for "whatever-folder-I'm-in-now" is just `.`.  Literally a dot. And the shortcut for "the-folder-immediately-up-one-layer" is `..`. So if you're in the `scripts` folder and you want to load the players.csv file, you would do:
 ```
@@ -126,5 +129,6 @@ https://www.youtube.com/watch?v=ephId3mYu9o&ab_channel=Udacity
 EXERCISES
 ------------------
 https://chat.openai.com/share/e78cf29c-5499-4fea-8f12-848c4314a5d3
+
 This has a lot of commands that have already been run in this repo.
 If you fork and/or clone it, you should be able to play around with the files/folders.
