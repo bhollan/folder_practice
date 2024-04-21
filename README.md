@@ -1,4 +1,4 @@
-**TL; DR: If your file's path starts with '/' or a drive letter like 'C:/', then it's absolute and you'll lose points for it. If it starts with `.` or `..`, you're probably fine.**
+**TL; DR: If your file's path starts with `/` or a drive letter like `C:/`, then it's absolute and you'll lose points for it. If it starts with `./` or `../`, you're probably fine.**
 
 If that makes total sense to you, you're done. If none of that makes any sense, read on.
 
